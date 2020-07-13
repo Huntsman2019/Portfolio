@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Oxygen' serif;
+  font-size: 16 px;
+  background-color: #390e3e;
+  background-color: #0A122A;
+  color: #fff;
+}
+@keyframes example{
+  0%  {
+    opacity: 0;
+    /* -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0); */
+  }
+}
+@keyframes exa{
+  0%{
+    opacity: 1;
+  }
+}
+#img1{
+  height:60px;
+  animation-name: example;
+  animation-duration:5s;
+}
+#img2{
+  animation-name: exa;
+  animation-duration: 1s;
+  /* animation-direction: reverse; */
+  display: block;
+  /* position: relative; */
+  margin-left:auto;
+  margin-right:auto;
+  opacity: 0;
+}
+p{
+  animation-name: example;
+  animation-duration: 5s;
+}
