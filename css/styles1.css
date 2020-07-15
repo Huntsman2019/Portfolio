@@ -1,54 +1,8 @@
 body{
-  background-color: #0A122A;
+  background-color:  #2E2F2F;
 }
-@keyframes right{
-  0%{
-    opacity: 0%;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-  }
-  14.28%{
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  28.57%{
-    opacity: 0%;
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
-  }
-  42.86%{
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  57.14%{
-    opacity:0;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-  }
-  71.43%{
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  85.71%{
-    opacity: 0%;
-    -webkit-transform: translate3d(0,-100%,0);
-    transform: translate3d(0,-100%,0);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
 
-}
-@keyframes right1{
-  0%{
-    opacity: 0;
-    transform: translate3d(100%,0,0);
-  }
+@keyframes right{
   10%{
     opacity: 1;
     transform: translateZ(0);
@@ -120,11 +74,11 @@ body{
 }
 img{
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    margin-top:150px;
-    animation-name: right1;
+    margin-top: 200px;
+    animation-name: right;
     animation-duration: 4.5s;
-    animation-fill-mode: both;
-    /* animation-name: top; */
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
 }
