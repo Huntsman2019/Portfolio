@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: Oxygen;
+    font-size: 16px;
+  }
+  
+  body{
+    font-family: 'Oxygen' serif;
+    font-size: 16 px;
+    color: #ACBDBA;
+    background-color: #2E2F2F;
+  }
+  
+  #header-nav{
+    background-color: #F1D302; 
+    /* background-color: #FFD400; */
+    /* background-color: #E9DF00; */
+    border: 0;
+  }
+  #logo-img img{
+    width:175px;
+    height:150px;
+    margin: 10px 15px 10px 0px;
+  }
+  button{
+      /* background-color: #DB3069;
+      background-color: #EA7317; */
+      background-color: #FE4A49;
+      color: #2E2F2F;
+      font-weight: bold;
+      border: 0;
+      padding: 10px;
+  }
+  .navbar-brand h1{
+    font-family: Lora serif;
+    color: #2E2F2F;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+  }
