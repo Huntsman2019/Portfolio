@@ -49,7 +49,7 @@ body{
   text-decoration: none;
 }
 #logo-img {
-  background: url('C:\\Users\\vidya\\Desktop\\Portfolio\\vklogo3.png') no-repeat;
+  background: url('vklogo3.png') no-repeat;
   background-size: 100% 100%;
   width: 125px;
   height: 107.14px;
@@ -69,7 +69,7 @@ body{
 
 @media (min-width: 767px) and (max-width: 991px){
   #logo-img{
-    background: url('C:\\Users\\vidya\\Desktop\\Portfolio\\vklogo3small.png') no-repeat;
+    background: url('vklogo3small.png') no-repeat;
     background-size: 100% 100%;
     width: 87.5px;
     height: 75px;
