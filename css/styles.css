@@ -67,7 +67,7 @@ body{
  }
 }
 
-@media (min-width: 767px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
   #logo-img{
     background: url('vklogo3small.png') no-repeat;
     background-size: 100% 100%;
@@ -83,7 +83,7 @@ body{
     font-size: 1.4em;
   }
   #nav-list a{
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 @media (max-width: 347px){
@@ -99,9 +99,11 @@ body{
   margin-top: 10px;
   margin-bottom: 0px;
 }
-#nav-list a {
+.navbar-default .navbar-nav>li>a{
   color: #2E2F2F;
   text-align: center;
+  font-size: 0.8em;
+  font-weight: 900;
 }
 #nav-list a:hover {
   /* background-color: #FE4A49; */
@@ -109,6 +111,8 @@ body{
 }
 #nav-list a img{
   margin: 2px 5px 5px 5px;
+  width: 24px;
+  height: 24px;
 }
 .navbar-header button{
   border: 0;
@@ -119,7 +123,7 @@ body{
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
   background-color: #F0C808;
 }
-@media(min-width: 767px){
+@media(min-width: 768px){
   #nav-list{
     margin-top: 50px;
     margin-bottom: 0px;
@@ -130,7 +134,7 @@ body{
   background-color: #2E2F2F;
   color: #F1D302;  
 }
-@media (min-width: 991px){
+@media (min-width: 992px){
   #nav-list{
     margin-bottom: 0px;
     margin-top: 80px;
@@ -143,10 +147,10 @@ body{
   color: #2E2F2F;
   text-align: center;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .panel-footer p{
-  padding: 5px;
+  padding: 15px 0px 5px 0px;
 }
 @keyframes lefttocenter{
   0%{
@@ -158,13 +162,32 @@ body{
     transform: translateZ(0);
   }
 }
-#main-content h2{
-  margin-top: 0px;
+@keyframes righttocenter{
+  0%{
+    opacity:0;
+    transform: translate3d(100%,0,0);
+  }
+  100%{
+    opacity:1;
+    transform: translateZ(0);
+  }
+}
+@keyframes toptocenter{
+  0%{
+    opacity:0;
+    transform: translate3d(0,-100%,0);
+  }
+  100%{
+    opacity:1;
+    transform: translateZ(0);
+  }
 }
 #main-content h4{
   margin-top: 50px;
+  font-size:0.9em;
 }
 #about{
+margin-top: 0px;
 animation-name: lefttocenter;
 animation-duration: 1s;
 }
@@ -182,4 +205,99 @@ animation-duration: 1s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-  
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #2E2F2F;
+  color: #F1D302;    
+}
+
+#main-content h3{
+  font-size: 2em;
+}
+@media (max-width: 767px){
+  #main-content p{
+    font-size: 0.9em;
+  }
+  #ach1 h3 {
+    margin-top: 0;
+  }
+  #ach1{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: lefttocenter;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach2{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: righttocenter;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach3{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: lefttocenter;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach4{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: righttocenter;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach5{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: lefttocenter;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    text-align: center;
+  }
+}
+@media (min-width: 768px){
+  #ach1 h3, #ach2 h3,#ach3 h3{
+    margin-top: 0;
+  }
+  #ach1{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: lefttocenter;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach2{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: toptocenter;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach3{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: righttocenter;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach4{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: lefttocenter;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    text-align: center;
+  }
+  #ach5{
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name: toptocenter;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    text-align: center;
+  }
+}
