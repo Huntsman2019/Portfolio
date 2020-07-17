@@ -424,4 +424,33 @@ animation-delay: 0.01s;
     animation-duration: 1s;
   }
 }
+ /* #MLbutton{
+   width:10px;
+   height:10px;
+ } */
+ #main-content button{
+   background-color: #2E2F2F;
+   color: #ACBDBA; 
+   border: 0; 
+   margin: 10px;
+   padding: 10px;
 
+ }
+ #main-content button:hover, #main-content button:focus{
+   background-color: #F1D302;
+   color: #2E2F2F;
+   border: 0;
+   outline: 0;
+   border-radius: 20px;
+ }
+ #main-content a{
+   color: #ACBDBA;
+   text-decoration: none;
+ }
+ #main-content img{
+   width: 30px;
+   height: 30px;
+ }
+ #main-content ul{
+   list-style: none;
+ }

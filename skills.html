@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="stock dp.jpg">
         <title>Vatsal Venkatkrishna</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -36,10 +37,10 @@
                             <li class="visible-xs">
                                 <a href="index.html"><img src="https://img.icons8.com/material/24/000000/home--v5.png"/>Home</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="achievements.html"><img src="https://img.icons8.com/material-sharp/24/000000/diploma.png"/>Achievements</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="skills.html"><img src="https://img.icons8.com/ios-filled/50/000000/da-vinci.png"/>Skills</a>
                             </li>
                             <li>
@@ -53,38 +54,29 @@
     </header>
     <div id="main-content" class="container">
         <div class="row">
-            <div id="ach1" class="col-12 col-sm-4">
-                <h3>IIT Kharagpur</h3>
-                <p>
-                    SGPA1: 8.45;<br>
-                    SGPA2: 9.43;<br>
-                    CGPA: 8.96
-                </p>
+            <button id="MLbutton" type="button" class="collapsed" data-toggle="collapse" data-target="#ML" aria-expanded="true">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/machine-learning.png"/> Machine Learning
+            </button>
+            <div id="ML" class="collapse">
+                <ul>
+                    <li>
+                        <a href="https://coursera.org/share/01df1fd4b3c32c0b91bb51951274adae">Machine Learning Coursera Certificate</a>
+                    </li>
+                </ul>
             </div>
-            <div id="ach2" class="col-12 col-sm-4">
-                <h3>JEE Advanced 2019</h3>
-                <p>
-                    All India Rank: 8336
-                </p>
-            </div>
-            <div id="ach3" class="col-12 col-sm-4">
-                <h3>JEE Mains 2019</h3>
-                <p>
-                    All India Rank: 12354
-                </p>
-            </div>
-            <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
-            <div id="ach4" class="col-12 col-sm-4">
-                <h3>Class 12 CBSE 2019</h3>
-                <p>
-                    Percentage: 93.2%
-                </p>
-            </div>
-            <div id="ach5" class="col-12 col-sm-4">
-                <h3>Class 10 ICSE 2017</h3>
-                <p>
-                    Percentage: 94.2%
-                </p>
+            <br>
+            <button id="Webdbutton" type="button" class="collapsed" data-toggle="collapse" data-target="#Webd" aria-expanded="true">
+                <img src="https://img.icons8.com/ios-filled/50/000000/domain.png"/> Web Development
+            </button>
+            <div id="Webd" class="collapse">
+                <ul>
+                    <li>
+                        <a href="https://coursera.org/share/a59ad956b1c600dc1d3f36f917ec65a8">Web Development Coursera Certificate (Johns Hopkins University)</a>
+                    </li>
+                    <li>
+                        <a href="https://huntsman2019.github.io/Wall-of-Cringe/">Wall of Cringe</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
