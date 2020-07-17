@@ -114,6 +114,7 @@ body{
 }
 .navbar-header button{
   border: 0;
+  margin-top: 25px;
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #000;
@@ -428,13 +429,16 @@ animation-delay: 0.01s;
    width:10px;
    height:10px;
  } */
+ .skills{
+   text-align: center;
+ }
  #main-content button{
    background-color: #2E2F2F;
    color: #ACBDBA; 
    border: 0; 
    margin: 10px;
    padding: 10px;
-
+   font-size: 1.1em;
  }
  #main-content button:hover, #main-content button:focus{
    background-color: #F1D302;
@@ -447,10 +451,73 @@ animation-delay: 0.01s;
    color: #ACBDBA;
    text-decoration: none;
  }
- #main-content img{
+ #main-content button img{
    width: 30px;
    height: 30px;
  }
  #main-content ul{
-   list-style: none;
+  list-style: none;
  }
+ #main-content li{
+  margin: 10px;
+  text-align: center;
+  margin-left:-23px;
+ }
+ #MLbutton{
+  opacity:0;
+  animation-name: lefttocenter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+ }
+ #Webdbutton{
+  opacity:0;
+  animation-name: righttocenter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+ }
+ #psbutton{
+  opacity:0;
+  animation-name: lefttocenter;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+ }
+ #aibutton{
+  opacity:0;
+  animation-name: righttocenter;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+ }
+ #Codingbutton{
+  opacity:0;
+  animation-name: lefttocenter;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+ }
+
+#vatsal img{
+  width: 300px;
+  height: 350px;
+  margin: 5px 20px 15px 0px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) and (max-width:991px){
+  #vatsal img{
+    width: 225px;
+    height: 263px;
+  }
+}
+@media (max-width: 767px){
+  #vatsal img{
+    width: 200px;
+    height: 233px;
+  }
+}
+@media (max-width: 450px){
+  #vatsal img{
+    width: 175px;
+    height: 204px;
+  }
+}
